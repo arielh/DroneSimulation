@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerEnvironment>PATH=%PATH%;$(APP_PATH)\Dependencies\zmq\x64\bin\Debug;$(APP_PATH)\Dependencies\Quad\x64\Debug;$(APP_PATH)\Dependencies\OpenSceneGraph\v3.6.5_x64\Debug\bin;$(APP_PATH)\Dependencies\opencv\build\x64\vc16\bin;$(APP_PATH)\Dependencies\IG\x64\Debug;</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-world:$(APP_PATH)/Models/Lab_FLT/FLT/drones_lab.flt -model:$(APP_PATH)/Models/point.ive -push:tcp://127.0.0.1:5557 -pop:tcp://127.0.0.1:5558 -mode:image -size:640,480 </LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommandArguments>-world:$(APP_PATH)/Models/Lab_FLT/FLT/drones_lab.flt -model:$(APP_PATH)/Models/point.ive -push:tcp://127.0.0.1:5557 -pop:tcp://127.0.0.1:5558 -mode:image -size:640,480</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerEnvironment>PATH=%PATH%;$(APP_PATH)\Dependencies\zmq\x64\bin\Release;$(APP_PATH)\Dependencies\Quad\x64\Release;$(APP_PATH)\Dependencies\OpenSceneGraph\v3.6.5_x64\Release\bin;$(APP_PATH)\Dependencies\opencv\build\x64\vc16\bin;$(APP_PATH)\Dependencies\IG\x64\Release;</LocalDebuggerEnvironment>
+  </PropertyGroup>
+</Project>

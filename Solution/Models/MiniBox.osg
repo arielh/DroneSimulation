@@ -1,0 +1,94 @@
+Group {
+  UniqueID Group_0
+  name "db"
+  nodeMask 0xffffffff
+  cullingActive TRUE
+  num_children 1
+  Group {
+    name "g1"
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    num_children 1
+    Group {
+      name "g2"
+      nodeMask 0xffffffff
+      cullingActive TRUE
+      num_children 1
+      Geode {
+        DataVariance STATIC
+        name "p1"
+        nodeMask 0xffffffff
+        cullingActive TRUE
+        StateSet {
+          DataVariance STATIC
+          rendering_hint TRANSPARENT_BIN
+          renderBinMode USE
+          binNumber 10
+          binName DepthSortedBin
+          GL_CULL_FACE ON
+          GL_LIGHTING OFF
+          GL_BLEND ON
+          Material {
+            ColorMode OFF
+            ambientColor 1 0 0 0.5
+            diffuseColor 0.318 0.0288235 0.646 0.5
+            specularColor 0.851 0.857 0.465 0.5
+            emissionColor 0.094 0 0 0.5
+            shininess 58.662
+          }
+          CullFace {
+            UniqueID CullFace_1
+            mode BACK
+          }
+          BlendFunc {
+            UniqueID BlendFunc_2
+            source SRC_ALPHA
+            destination ONE_MINUS_SRC_ALPHA
+          }
+        }
+        num_drawables 1
+        Geometry {
+          DataVariance STATIC
+          useDisplayList TRUE
+          useVertexBufferObjects FALSE
+          PrimitiveSets 1
+          {
+            DrawArrays QUADS 0 24
+          }
+          VertexArray Vec3Array 24
+          {
+            -0.0125 -0.0122704 0.0125
+            0.0125 -0.0122704 0.0125
+            0.0125 0.0122704 0.0125
+            -0.0125 0.0122704 0.0125
+            0.0125 -0.0122704 -0.0125
+            0.0125 -0.0122704 0.0125
+            -0.0125 -0.0122704 0.0125
+            -0.0125 -0.0122704 -0.0125
+            0.0125 0.0122704 -0.0125
+            0.0125 0.0122704 0.0125
+            0.0125 -0.0122704 0.0125
+            0.0125 -0.0122704 -0.0125
+            -0.0125 0.0122704 -0.0125
+            -0.0125 0.0122704 0.0125
+            0.0125 0.0122704 0.0125
+            0.0125 0.0122704 -0.0125
+            -0.0125 -0.0122704 -0.0125
+            -0.0125 -0.0122704 0.0125
+            -0.0125 0.0122704 0.0125
+            -0.0125 0.0122704 -0.0125
+            -0.0125 0.0122704 -0.0125
+            0.0125 0.0122704 -0.0125
+            0.0125 -0.0122704 -0.0125
+            -0.0125 -0.0122704 -0.0125
+          }
+          ColorBinding OVERALL
+          ColorArray Vec4Array 1
+          {
+            1 0.0588235 1 1
+          }
+        }
+      }
+    }
+  }
+}
